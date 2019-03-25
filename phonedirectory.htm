@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Phone Directory</title>
+	<link rel="stylesheet" href="phonedirectory.css">
+	<script src="phonedirectory.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Phone Directory</h1>
+		</div>
+		<div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+		<div class="quickaddForm">
+			<label for="fullname">Name<font color="red">*</font></label><input  type="text" pattern="[A-Za-z]{3-25}" id="fullname" placeholder="Eg: Akash" class="formFields" onkeyup="showData()">
+			<label for="phone" >Phone<font color="red">*</font></label><input  type="tel" pattern="[0-9]{10}"  id="phone" placeholder="without 0 or +91" class="formFields" onkeyup="showData()" min="10" maxlength="10">
+			<br><br>
+			<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+			<div id="showDataDiv"> 
+				 <p id="displayName"></p>
+				 <p id="displayPhone"></p>
+			</div>
+		</div>
+		<div class="phndirectory">
+			<!-- <div class="entry">
+				<div class="name"><p>name here</p></div>
+				<div class="phone"><p>number here</p></div>
+				<div class="del"><a href="#">Delete</a></div>
+			</div> -->
+			
+		</div>
+	</div>
+</body>	
+</html>
